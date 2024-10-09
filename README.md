@@ -12,3 +12,4 @@ Start:
 
 * `cd latest`
 * `docker compose up -d`
+* You may have to restart the web-container on initial setup, due to the service starting before DB-seeding is completed. This can be done through `docker desktop`, or by running `docker container restart latest-web-1`.
