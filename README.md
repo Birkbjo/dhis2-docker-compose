@@ -11,5 +11,5 @@ For versions other than `latest`, download the DB from [databases.dhis2.org](htt
 Start:
 
 * `cd latest`
-* `docker compose up -d`
+* `docker compose pull && docker compose up -d`
 * You may have to restart the web-container on initial setup, due to the service starting before DB-seeding is completed. This can be done through `docker desktop`, or by running `docker container restart latest-web-1`.
